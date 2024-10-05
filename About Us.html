@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+ <style>
+    @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Define a keyframe animation for sliding in from the left */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Apply the animations to your elements */
+h1 {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.pricing-plan {
+  animation: slideIn 1.5s ease-in-out;
+}
+ </style>
+  </head>
+
+  <body>
+    <h1>Our Amazing Service</h1>
+    <div class="pricing-plan">
+      <h2 class="Pricing-title">Basic Plan</h2>
+      <p class="plan-price">$29.99</p>
+      <ul class="plan-features">
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+      </ul>
+      <button class="plan-button">Buy Now</button>
+    </div>
+  </body>
+  </html>
